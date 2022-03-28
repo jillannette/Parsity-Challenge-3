@@ -1,0 +1,14 @@
+//Write a function called isPalindrome that takes an argument as a string 
+//  and returns true if that string is a palindrome and false if that string
+//   is not a palindrome. You can assume that all strings will be single words
+//   with no spaces. Result = true or false 
+
+function isPalindrome (str) {
+  str = str.toLowerCase();
+  for (var i = 0; i <= (str.length / 2); i++) {
+    if (str[i] != str[str.length - (i + 1)]) return false;
+  }
+  return true;
+  }
+console.log(isPalindrome('JILL'));
+// false
